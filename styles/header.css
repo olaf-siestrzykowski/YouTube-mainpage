@@ -1,0 +1,152 @@
+.header {
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 10;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 40px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.hamburger-menu {
+    height: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    width: 10px;
+    height: 32px;
+    padding-left: 11px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar::placeholder {
+    font-size: 16px;
+}
+
+.search-button {
+    height: 36px;
+    width: 65px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 9px;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-box .tooltip,
+.app-box .tooltip,
+.notifications-icon-container .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -26px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button,
+.voice-search-button,
+.upload-box,
+.app-box,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-box:hover .tooltip,
+.app-box:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 26px;
+}
+
+.voice-search-button {
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.voice-search-icon {
+    height: 22px;
+}
+
+.upload-icon{
+    height: 24px;
+}
+
+.apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.notifications-count {
+   position: absolute;
+   top: -3px;
+   right: -4px;
+   background-color: rgb(200, 0, 0);
+   color: white;
+   border-radius: 10px;
+   font-size: 11px;
+   padding: 2px;
+}
+
+.current-user-pic {
+    width: 30px;
+    border-radius: 16px;
+}
